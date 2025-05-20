@@ -13,7 +13,7 @@ from task_manager.views import (tasks_count,
                                 TaskListCreateView,
                                 TaskDetailUpdateDeleteView,
                                 CategoryViewSet, UserTasksListGenericView, UserSubTasksListGenericView, LogInAPIView,
-                                LogOutAPIView)
+                                LogOutAPIView, RegisterUserAPIView)
 
 schema_view = get_schema_view(
     openapi.Info(
@@ -46,6 +46,8 @@ urlpatterns = [
     path('', include(router.urls)),
     path('auth-login/', LogInAPIView.as_view()),
     path('auth-logout/', LogOutAPIView.as_view()),
+    path('auth-register/', RegisterUserAPIView.as_view()),
+
     path('auth-login-jwt/', TokenObtainPairView.as_view()),
     path('token_refresh/', TokenRefreshView.as_view()),
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0)),
