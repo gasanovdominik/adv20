@@ -1,0 +1,47 @@
+https://docs.djangoproject.com/en/5.1/ref/models/fields/
+https://docs.djangoproject.com/en/5.2/ref/models/options/
+https://docs.djangoproject.com/en/5.1/howto/logging/#logging-how-to https://docs.djangoproject.com/en/5.1/howto/logging/#logging-how-to
+https://docs.djangoproject.com/en/5.1/topics/email/
+https://github.com/maildev/maildev/blob/main/docker-compose.yml - работа с smtp
+
+pip install factory_boy - для создание фэйковых записей (https://factoryboy.readthedocs.io/en/stable/index.html )
+pip install drf-yasg - работа swagger
+pip install djangorestframework-simplejwt - для работы с токеном jwt
+pip install djangorestfraemwork - для работы с rest
+pip install django-filter
+
+pip install django-environ - для работы с .env
+pip install django
+django-admin startproject <Имя проекта> . - создание проекта Django
+python manage.py startapp <Имя приложения> - создание приложения
+python manage.py runserver - запуск сервера Django
+python manage.py createsuperuser - создание Юзера
+python manage.py makemigrations - инициализация БД и проверка изменения
+python manage.py migrate - применяет миграцию
+python manage.py showmigrations - показать все миграции
+python .\manage.py shell - запуск консоли Django
+
+-----------вирт окр--------------
+python -m venv .venv - создание виртуального окружения.
+.\.venv\Scripts\activate - активация виртуального окружения.
+
+-----------Git-------------
+https://github.com/github/gitignore/blob/main/Python.gitignore - gitignore от GitHub
+git init
+git branch -M main
+git add (точка . - для всех файлов или имя конкретного файла)
+git commit -m "комментарии к коммиту"
+git remote add origin 'имя вашего репозитория'
+git push -u origin main
+
+git checkout -b name - добавляет ветку и переключается на нее
+git pull origin main - подтягивает в локальный
+git push origin main - отправляет на сервер
+
+git stage push -m "Заморозить изменения" - для заморозки изменения, например в другой ветки. Чтобы не делать add.
+
+--Игнорируем свои изменения и забираем то что в origin
+git fetch origin
+git reset --hard origin/main
+
+Регистрация моделей происходит в файле проекта, admin.py
